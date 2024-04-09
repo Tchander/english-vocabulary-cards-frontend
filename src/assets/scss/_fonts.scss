@@ -1,0 +1,77 @@
+@import 'mixins/fonts';
+
+// 400
+@include font-face('Golos Text', '@/assets/fonts/GolosText/ttf/GolosText-Regular', 400, normal, ttf);
+
+// 500
+@include font-face('Golos Text', '@/assets/fonts/GolosText/ttf/GolosText-Medium', 500, normal, ttf);
+
+// 600
+@include font-face('Golos Text', '@/assets/fonts/GolosText/ttf/GolosText-SemiBold', 600, normal, ttf);
+
+// 700
+@include font-face('Golos Text', '@/assets/fonts/GolosText/ttf/GolosText-Bold', 700, normal, ttf);
+
+// 800
+@include font-face('Golos Text', '@/assets/fonts/GolosText/ttf/GolosText-ExtraBold', 800, normal, ttf);
+
+// 900
+@include font-face('Golos Text', '@/assets/fonts/GolosText/ttf/GolosText-Black', 900, normal, ttf);
+
+// --------------
+
+.font-400-12-16 {
+  @include font(400, 12px, 16px);
+}
+
+.font-400-12-18 {
+  @include font(400, 12px, 18px);
+}
+
+.font-400-12-20 {
+  @include font(400, 12px, 20px);
+}
+
+.font-400-14 {
+  @include font(400, 14px);
+}
+
+.font-400-14-20 {
+  @include font(400, 14px, 20px);
+}
+
+.font-400-18-24 {
+  @include font(400, 18px, 24px);
+}
+
+.font-500-12-15 {
+  @include font(500, 12px, 15px);
+}
+
+.font-500-12-18 {
+  @include font(500, 12px, 18px);
+}
+
+.font-500-14-18 {
+  @include font(500, 14px, 18px);
+}
+
+.font-500-24-32 {
+  @include font(500, 24px, 32px);
+}
+
+.font-600-14-130 {
+  @include font(500, 14px, 130%);
+}
+
+.font-700-18-24 {
+  @include font(700, 18px, 24px);
+}
+
+.font-700-16-20 {
+  @include font(700, 16px, 20px);
+}
+
+.font-700-24-32 {
+  @include font(700, 24px, 32px);
+}
