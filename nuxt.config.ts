@@ -9,4 +9,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
   ],
-})
+
+  imports: {
+    dirs: ['config'],
+  },
+
+  runtimeConfig: {
+    apiBase: process.env.API_BASE_URL,
+  }
+});

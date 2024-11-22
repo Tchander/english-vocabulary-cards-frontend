@@ -8,11 +8,11 @@ const NEVER = 'never';
 export default withNuxt(
   {
     rules: {
-      semi: OFF,
+      semi: ERROR,
       radix: OFF,
       'no-shadow': OFF,
       'no-plusplus': OFF,
-      'no-console': [WARNING, { allow: ['error'] }],
+      'no-console': [WARNING, { allow: [ERROR] }],
       'arrow-body-style': OFF,
       'consistent-return': OFF,
       'no-param-reassign': OFF,
@@ -84,4 +84,4 @@ export default withNuxt(
       '@typescript-eslint/no-explicit-any': WARNING,
     }
   }
-)
+);
