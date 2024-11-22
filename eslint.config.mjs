@@ -81,6 +81,7 @@ export default withNuxt(
       'vue/component-tags-order': [ERROR, {
         order: ['template', 'script', 'style'],
       }],
+      '@typescript-eslint/no-explicit-any': WARNING,
     }
   }
 )

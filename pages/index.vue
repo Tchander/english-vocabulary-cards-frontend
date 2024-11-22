@@ -1,9 +1,7 @@
 <template>
-  <div>
-    {{ test }}
-  </div>
+  <div />
 </template>
 
 <script setup lang="ts">
-const test = ref('Пук');
+// pass
 </script>
