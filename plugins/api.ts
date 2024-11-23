@@ -1,8 +1,8 @@
 export default defineNuxtPlugin((nuxtApp) => {
-  const { apiBase } = useRuntimeConfig();
+  const config = useRuntimeConfig();
 
   const api = $fetch.create({
-    baseURL: apiBase,
+    baseURL: config.public.apiBase,
     async onResponseError({ response }) {
       if (response.status === HttpCodes.UNAUTHORIZED) {
         await nuxtApp.runWithContext(() => navigateTo('/login'));
