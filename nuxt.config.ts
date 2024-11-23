@@ -10,8 +10,8 @@ export default defineNuxtConfig({
             `@use "~/assets/scss/variables/_borderRadius.scss" as *;
              @use "~/assets/scss/variables/_breakpoints.scss" as *;
              @use "~/assets/scss/variables/_margins.scss" as *;
-             @use "~/assets/scss/mixins/_media.scss" as *;
-             @use "~/assets/scss/variables/_paddings.scss" as *;`,
+             @use "~/assets/scss/variables/_paddings.scss" as *;
+             @use "~/assets/scss/mixins/_media.scss" as *;`,
         },
       },
     }
@@ -23,6 +23,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
+    'nuxtjs-naive-ui',
+    '@nuxt/fonts',
   ],
 
   imports: {

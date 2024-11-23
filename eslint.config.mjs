@@ -34,13 +34,6 @@ export default withNuxt(
         // import
       'import/no-extraneous-dependencies': OFF,
       'import/prefer-default-export': OFF,
-      'import/extensions': [ERROR,
-        'ignorePackages',
-        {
-          js: NEVER,
-          ts: NEVER,
-        },
-      ],
       'import/order': [ERROR, {
         groups: [
           'builtin',
