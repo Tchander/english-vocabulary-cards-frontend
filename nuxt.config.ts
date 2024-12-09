@@ -11,6 +11,7 @@ export default defineNuxtConfig({
              @use "~/assets/scss/variables/_breakpoints.scss" as *;
              @use "~/assets/scss/variables/_margins.scss" as *;
              @use "~/assets/scss/variables/_paddings.scss" as *;
+             @use "~/assets/scss/_fonts.scss" as *;
              @use "~/assets/scss/mixins/_media.scss" as *;`,
         },
       },
@@ -25,6 +26,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxtjs-naive-ui',
     '@nuxt/fonts',
+    '@pinia/nuxt',
   ],
 
   imports: {

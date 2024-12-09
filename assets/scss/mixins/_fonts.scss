@@ -1,0 +1,12 @@
+/**
+ * Примеры использования:
+ * - @include font(400, 12px, 18px);
+ * - @include font(null, 12px, 18px);
+ * - @include font(null, 12px, 1.5, Helvetica);
+ */
+@mixin font($weight: null, $size: null, $lh: null, $type: null) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  font-family: $type;
+}

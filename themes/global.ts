@@ -1,3 +1,4 @@
+import { lightButtonTheme } from '@/themes/components';
 import type { GlobalThemeOverrides } from 'naive-ui';
 
 export const lightGlobalTheme = {
@@ -5,4 +6,5 @@ export const lightGlobalTheme = {
     fontWeight: '500',
     fontWeightStrong: '600',
   },
+  Button: lightButtonTheme,
 } satisfies GlobalThemeOverrides;

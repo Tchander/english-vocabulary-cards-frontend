@@ -3,7 +3,6 @@ import withNuxt from './.nuxt/eslint.config.mjs';
 const OFF = 'off';
 const ERROR = 'error';
 const WARNING = 'warn';
-const NEVER = 'never';
 
 export default withNuxt(
   {
@@ -75,6 +74,7 @@ export default withNuxt(
         order: ['template', 'script', 'style'],
       }],
       '@typescript-eslint/no-explicit-any': WARNING,
+      '@typescript-eslint/consistent-type-imports': ERROR,
     }
   }
 );
