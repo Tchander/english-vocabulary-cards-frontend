@@ -11,6 +11,7 @@ export default defineNuxtConfig({
              @use "~/assets/scss/variables/_breakpoints.scss" as *;
              @use "~/assets/scss/variables/_margins.scss" as *;
              @use "~/assets/scss/variables/_paddings.scss" as *;
+             @use "~/assets/scss/variables/_colors.scss" as *;
              @use "~/assets/scss/_fonts.scss" as *;
              @use "~/assets/scss/mixins/_media.scss" as *;`,
         },
@@ -32,6 +33,13 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['config'],
   },
+
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
 
   runtimeConfig: {
     public: {
