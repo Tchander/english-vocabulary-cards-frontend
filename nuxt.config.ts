@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     'nuxtjs-naive-ui',
     '@nuxt/fonts',
     '@pinia/nuxt',
+    '@nuxt/icon',
   ],
 
   imports: {
